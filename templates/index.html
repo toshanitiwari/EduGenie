@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduGenie: AI-Powered Educational Content Creator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <div class="container">
+    <h1>EduGenie: AI-Powered Educational Content Creator</h1>
+
+    <label for="courseTitle">Course Title:</label>
+    <input type="text" id="courseTitle" placeholder="Enter the course title" />
+
+    <button id="generateBtn">Generate Content</button>
+
+    <p id="statusMsg" class="status"></p>
+
+    <div id="outputBox" class="output-box hidden">
+      <div class="output-header">
+        <span>Output:</span>
+        <button id="copyBtn">Copy</button>
+      </div>
+      <pre id="outputContent"></pre>
+    </div>
+
+    <div class="privacy-notice">
+      <strong>Data Privacy Notice:</strong> Your input data is used only to
+      generate educational content and is not stored or logged.
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
