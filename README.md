@@ -61,7 +61,7 @@ Get a key from https://platform.openai.com/api-keys (small free/paid credits nee
 ```bash
 python app.py
 ```
-Open your browser at: **http://127.0.0.1:5000**
+Open your browser at: **https://edugenie-zvjd.onrender.com/**
 
 ## Data Privacy
 The course title is sent to OpenAI only to generate the response for that
